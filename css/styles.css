@@ -1,0 +1,19 @@
+h1, h3, p {
+  margin: 0;
+  padding; 0;
+}
+
+.nav-main {
+  margin: 0 auto;
+  padding: 12.5% auto;
+  background-color: darkgrey;
+}
+
+.main-content {
+  padding: 25% auto;
+  background-color: lightgray;
+}
+
+.contact {
+  padding: 12.5% auto;
+}
