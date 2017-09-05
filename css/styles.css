@@ -1,19 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+  width: 100%;
+}
+
 h1, h3, p {
   margin: 0;
   padding; 0;
 }
 
-.nav-main {
-  margin: 0 auto;
-  padding: 12.5% auto;
-  background-color: darkgrey;
+p {
+  font-weight: 300;
+}
+
+.header-content {
+  text-align: center;
+  padding-bottom: 10%;
+  background-color: #f8f8f8;
+}
+
+.student-name {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+}
+
+.main-nav {
+  list-style: none;
+  font-size: 1em;
+}
+
+.main-nav li {
+  margin-left: -18px;
+  margin-bottom: 0.25em;
+  padding: 0.5em 0em;
+  font-weight: bold;
+  width: 99%;
+  border-radius: 2.5px;
+  background-color: white;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.profile-img {
+  display: block;
+  margin: auto;
+  padding-top: 1.25em;
+  width: 50%;
+}
+
+.bio-text {
+  padding-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  color: #858585;
+}
+
+.portfolio-img {
+  display: block;
+  margin: auto;
+  padding-bottom: 1.25em;
+  width: 92%;
 }
 
 .main-content {
-  padding: 25% auto;
-  background-color: lightgray;
+  padding-top: 3em;
+  text-align: center;
+  padding-bottom: 20%;
+  background-color: #fff;
+}
+
+.main-content-title {
+  padding-bottom: 2.5em;
+  color: #555;
+}
+
+.portfolio-section h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #454545;
+}
+
+.portfolio-content {
+  padding-bottom: 1.5em;
+}
+
+.portfolio-content h3 {
+  padding-bottom: 0.5em;
 }
 
 .contact {
-  padding: 12.5% auto;
+  padding-top: 5em;
+  background-color: #f8f8f8;
 }
