@@ -9,6 +9,11 @@ h1, h3, p {
   padding; 0;
 }
 
+a {
+  text-decoration: none;
+  color: #555;
+}
+
 p {
   font-weight: 300;
 }
@@ -23,7 +28,7 @@ p {
   padding-top: 1em;
   padding-bottom: 0.5em;
   font-size: 3em;
-  color: #333;
+  color: #444;
   text-align: center;
 }
 
@@ -71,7 +76,7 @@ p {
 .main-content {
   padding-top: 3em;
   text-align: center;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   background-color: #fff;
 }
 
@@ -88,13 +93,55 @@ p {
 
 .portfolio-content {
   padding-bottom: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .portfolio-content h3 {
   padding-bottom: 0.5em;
 }
 
-.contact {
+hr {
+  display: block;
+  width: 95%;
+  border: 1px solid #e5e5e5;
+}
+
+.footer {
   padding-top: 5em;
+  padding-right: 1em;
+  padding-left: 1em;
   background-color: #f8f8f8;
+}
+
+.footer-content {
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+.footer-content h3 {
+  padding-bottom: 1em;
+}
+
+.footer-content p {
+  padding-bottom: 1em;
+}
+
+.bottom-nav {
+  display: inline;
+}
+
+.bottom-nav-name {
+  padding-top: 1em;
+  font-weight: 600;
+  color: #444;
+  float: left;
+  width: 120px;
+}
+
+.bottom-nav-redirect {
+  padding-top: 1em;
+  font-weight: 600;
+  float: right;
+  width: 120px;
 }
