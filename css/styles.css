@@ -47,11 +47,6 @@ p {
   background-color: white;
 }
 
-.main-nav li a {
-  text-decoration: none;
-  color: #555;
-}
-
 .profile-img {
   display: block;
   margin: auto;
@@ -144,4 +139,40 @@ hr {
   font-weight: 600;
   float: right;
   width: 120px;
+}
+
+@media(min-width: 768px){
+
+  .main-nav li {
+    display: inline-block;
+    width: 18%;
+    padding-top: 0;
+    margin-right: 1.25em;
+    background-color: inherit;
+  }
+
+  .bio {
+    display:inline-block;
+    padding-right: 5%;
+  }
+
+  .profile-img {
+    float: right;
+    padding-top: 5%;
+  }
+
+  .bio-text {
+    text-align: justify;
+    float: left;
+    width: 50%;
+    padding-top: 10%;
+    font-size: 1.25em;
+  }
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 }
