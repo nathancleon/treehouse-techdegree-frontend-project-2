@@ -87,7 +87,7 @@ p {
 #main-content {
   padding-top: 3em;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   background-color: #fff;
 }
 
@@ -102,14 +102,12 @@ p {
   color: #454545;
 }
 
-.portfolio-content {
-  padding-bottom: 1.5em;
-  padding-right: 1em;
-  padding-left: 1em;
+.portfolio-content h3 {
+  padding-bottom: 0.25em;
 }
 
-.portfolio-content h3 {
-  padding-bottom: 0.5em;
+.portfolio-content p {
+  margin-bottom: 1.5em;
 }
 
 /*************************
@@ -142,6 +140,10 @@ hr {
   border: 1px solid #e5e5e5;
 }
 
+/*************************
+ FOOTER NAV
+**************************/
+
 .bottom-nav {
   display: inline;
 }
@@ -165,6 +167,11 @@ hr {
 .bottom-nav-links {
   visibility: hidden;
 }
+
+
+/*************************
+ TABLET LAYOUT
+**************************/
 
 @media(min-width: 768px){
 
@@ -223,20 +230,20 @@ hr {
   }
 
   .bottom-nav-redirect{
-    visibility: hidden;
+    display: none;
   }
 
   .bottom-nav-links {
+    visibility: visible;
     list-style: none;
-    width: 40%;
+    width: 50%;
     font-weight: 600;
     float: right;
-    margin-right: -10%;
+    padding-left: 15%;
     z-index: 1;
   }
 
   .bottom-nav-links li {
-    visibility: visible;
     display: inline;
     margin-bottom: 0.25em;
     padding-right: 1em;
@@ -249,11 +256,14 @@ hr {
   }
 }
 
+/*************************
+ DESKTOP LAYOUT
+**************************/
+
 @media(min-width: 1024px){
   .student-name {
     float: left;
     width: 40%;
-
   }
 
   .main-nav {
@@ -263,17 +273,22 @@ hr {
     width: 60%;
   }
 
-  .portfolio-content {
+  #main-content {
     width: 100%;
   }
 
   .col-3 {
-    width: 33.333333%;
-    float: left;
-    margin-bottom: 2.5%;
+    width: 33%;
+    vertical-align: top;
+    float: none;
+    display: inline-block;
+  }
+
+  .bottom-nav-name {
+    padding-left: 1em;
   }
 
   .bottom-nav-links {
-    padding-left: 15%;
+    padding-left: 20%;
   }
 }
