@@ -1,22 +1,34 @@
+/*************************
+ HIGH LEVEL GENERAL STYLES
+**************************/
+
 * {
   box-sizing: border-box;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   width: 100%;
 }
 
 h1, h3, p {
   margin: 0;
-  padding; 0;
 }
 
 a {
   text-decoration: none;
+  transition: color 0.5s ease;
   color: #555;
+}
+
+a:hover {
+  color: #28cef2;
 }
 
 p {
   font-weight: 300;
 }
+
+/*************************
+ HEADER CONTENT AND NAV
+**************************/
 
 .header-content {
   text-align: center;
@@ -68,6 +80,10 @@ p {
   width: 92%;
 }
 
+/******************************
+ MAIN PORTFOLIO CENTER CONTENT
+*******************************/
+
 #main-content {
   padding-top: 3em;
   text-align: center;
@@ -96,11 +112,9 @@ p {
   padding-bottom: 0.5em;
 }
 
-hr {
-  display: block;
-  width: 98%;
-  border: 1px solid #e5e5e5;
-}
+/*************************
+ FOOTER & CONTACT CONTENT
+**************************/
 
 #footer {
   padding-top: 5em;
@@ -120,6 +134,12 @@ hr {
 
 .footer-content p {
   padding-bottom: 1em;
+}
+
+hr {
+  display: block;
+  width: 98%;
+  border: 1px solid #e5e5e5;
 }
 
 .bottom-nav {
@@ -207,11 +227,11 @@ hr {
   }
 
   .bottom-nav-links {
-    margin-right: -15%;
     list-style: none;
     width: 40%;
     font-weight: 600;
     float: right;
+    margin-right: -10%;
     z-index: 1;
   }
 
@@ -227,5 +247,33 @@ hr {
     display: table;
     clear: both;
   }
+}
 
+@media(min-width: 1024px){
+  .student-name {
+    float: left;
+    width: 40%;
+
+  }
+
+  .main-nav {
+    float: right;
+    font-size: 1.25em;
+    margin-top: 70px;
+    width: 60%;
+  }
+
+  .portfolio-content {
+    width: 100%;
+  }
+
+  .col-3 {
+    width: 33.333333%;
+    float: left;
+    margin-bottom: 2.5%;
+  }
+
+  .bottom-nav-links {
+    padding-left: 15%;
+  }
 }
