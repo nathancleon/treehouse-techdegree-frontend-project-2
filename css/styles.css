@@ -68,7 +68,7 @@ p {
   width: 92%;
 }
 
-.main-content {
+#main-content {
   padding-top: 3em;
   text-align: center;
   padding-bottom: 10%;
@@ -98,11 +98,11 @@ p {
 
 hr {
   display: block;
-  width: 95%;
+  width: 98%;
   border: 1px solid #e5e5e5;
 }
 
-.footer {
+#footer {
   padding-top: 5em;
   padding-right: 1em;
   padding-left: 1em;
@@ -139,6 +139,11 @@ hr {
   font-weight: 600;
   float: right;
   width: 120px;
+  z-index: -1;
+}
+
+.bottom-nav-links {
+  visibility: hidden;
 }
 
 @media(min-width: 768px){
@@ -167,6 +172,54 @@ hr {
     width: 50%;
     padding-top: 10%;
     font-size: 1.25em;
+  }
+
+  .col-left {
+    width: 50%;
+    float: left;
+    padding-left: 0;
+  }
+
+  .col-right {
+    width: 50%;
+    float: right;
+    padding-right: 0;
+  }
+
+  .footer-content {
+    margin-top: -2em;
+  }
+
+  .contact-title {
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-bottom: 1em;
+  }
+
+  .contact-desc {
+    padding-left: 6em;
+    padding-right: 6em;
+    margin-bottom: 1em;
+  }
+
+  .bottom-nav-redirect{
+    visibility: hidden;
+  }
+
+  .bottom-nav-links {
+    margin-right: -15%;
+    list-style: none;
+    width: 40%;
+    font-weight: 600;
+    float: right;
+    z-index: 1;
+  }
+
+  .bottom-nav-links li {
+    visibility: visible;
+    display: inline;
+    margin-bottom: 0.25em;
+    padding-right: 1em;
   }
 
   .group:after {
